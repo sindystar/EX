@@ -120,5 +120,37 @@ figure {
         }
       }
     }
+    .bg {
+      width: 100% ;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0.12;
+      overflow: hidden;
+
+      .color1 {
+        width: 60vw;
+        height: 40vw;
+        background: linear-gradient(80deg, orange, hotpink);
+        position: absolute;
+        bottom: 5vh;
+        right: 0;
+        border-radius: 50%;
+        filter: blur(80px);
+        mix-blend-mode: overlay;
+        animation: move2 15s linear infinite;
+      }
+    }
+    .outlined {
+      font: 15vw/1 'heebo';
+      color: transparent;
+      -webkit-text-stroke: 1px #fff;
+      position: absolute;
+      bottom: 7vh;
+      right: 5vw;
+      z-index: 3;
+    }
   }
 }
